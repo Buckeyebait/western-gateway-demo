@@ -42,7 +42,7 @@
 
 /* ---------- reset ---------- */
 *,*::before,*::after{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%}
+html{scroll-behavior:smooth;scroll-padding-top:92px;-webkit-text-size-adjust:100%;overflow-x:hidden}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 body{
   margin:0;font-family:var(--sans);background:var(--paper);color:var(--ink-text);
@@ -202,8 +202,8 @@ body.nav-open .nav-backdrop{opacity:1;visibility:visible}
 
 /* ---------- guides ---------- */
 .guide{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
-.guide__media{aspect-ratio:1/1;overflow:hidden;background:var(--pine)}
-.guide__media img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.guide__media{aspect-ratio:3/2;overflow:hidden;background:var(--pine)}
+.guide__media img{width:100%;height:100%;object-fit:cover;object-position:center 22%;transform:scale(1.06)}
 .guide__body{padding:1.1rem 1.2rem 1.3rem;text-align:center}
 .guide__body h3{font-size:1.35rem;color:var(--pine)}
 .guide__role{font-family:var(--display);text-transform:uppercase;letter-spacing:.12em;font-size:.72rem;color:var(--sienna);font-weight:600;margin-top:.2rem}
